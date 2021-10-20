@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkey Up/Down key events</title>
+    <script>
+        function call() {
+            result.innerHTML = txt.value
+        }
+        function pcheck() {
+            if (password.value == cpassword.value) {
+                check.innerHTML = "<b><font color='green'>Password Matched</font></b>"
+            }
+            else {
+                check.innerHTML = "<b><font color='red'>Password Not Match</font></b>"
+            }
+        }
+        function pstrength() {
+            if (password.value.length < 5) {
+                strength.innerHTML = "<b><font color='red'>Weak</font></b>"
+            }
+            else if (password.value.length > 5 && password.value.length < 10) {
+                strength.innerHTML = "<b><font color='orange'>Good</font></b>"
+            }
+            else if (password.value.length > 10) {
+                strength.innerHTML = "<b><font color='green'>Strong</font></b>"
+            }
+        }
+        function disc() {
+            if (dis.checked) { discount.innerHTML = dis.value + " Discount" }
+            else {
+                discount.innerHTML = "No Discount."
+            }
+            // alert(dis.checked)
+
+        }
+        function shade() {
+            if (rshade.checked) {
+                mname.color = "rshade.value"
+            }
+            else if (gshade.checked) {
+                mname.color = "gshade.value"
+            }
+            else if (bshade.checked) {
+                mname.color = "bshade.value"
+            }
+            else if (oshade.checked) {
+                mname.color = "oshade.value"
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    write here: <input type="text" id="txt" placeholder="Enter text here.........." onkeyup="call()"> <br>
+    <div id="result"></div> <br><br>
+    <input type="password" id="password" placeholder="Enter password here.........." onkeyup="pstrength()"><span
+        id="strength"></span> <br>
+    <br>
+    <input type="password" id="cpassword" placeholder="Re-Enter password here.........." onkeyup="pcheck()"> <span
+        id="check"></span> <br><br>
+    <input onchange="disc()" type="checkbox" id="dis" value="50%">50%
+    <div id="discount"></div> <br>
+    <input type="radio" name="col" id="rshade" value="red" onchange="shade()"> Red
+    <input type="radio" name="col" id="gshade" value="green" onchange="shade()"> Green
+    <input type="radio" name="col" id="bshade" value="blue" onchange="shade()"> Blue
+    <input type="radio" name="col" id="oshade" value="orange" onchange="shade()">Orange <br>
+    <font id="mname" size="14">Vivek Sharma Upmanyu</font>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amul Products</title>
+    <script src="amul.js"></script>
+  </head>
+  <body>
+    <br /><br />
+
+    <center>
+      <h1>List of Amul Products</h1>
+      <hr width="250" />
+      <hr width="250" />
+      <br />
+      <br />
+      <select name="" id="product" onchange="call()">
+        <option value="">-Select-</option>
+        <option value="650">Amul Ghee</option>
+        <option value="270">Amul Cheese</option>
+        <option value="245">Amul Cream</option>
+        <option value="86">Amul Milk</option>
+        <option value="255">Amul Butter</option>
+        <option value="92">Amul Dahi</option>
+      </select>
+      <br />
+      <br />
+      Name: <span id="pname"></span> <br />
+      Price: <span id="price"></span> <br />
+      Picture: <img id="pic" src=" " />
+      <hr width="500" />
+      <br />
+      <br />
+      <input type="text" id="qty" placeholder="-Enter Quantity-" /> <br />
+      <br />
+      <input type="button" value="Get Amount" onclick="amount()" /> <br />
+      <br />
+      Net Amount: <span id="net"></span>
+    </center>
+  </body>
+</html>

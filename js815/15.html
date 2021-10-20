@@ -1,0 +1,25 @@
+<script>
+function call()
+{if(c1.checked)
+ msg.color=c1.value
+
+else if(c2.checked)
+ msg.color=c2.value
+
+else if(c3.checked)
+ msg.color=c3.value
+
+}
+
+</script>
+
+<html>
+<input onChange="call()" id="c1" name="color" type="radio" value="red">Red
+<input onChange="call()" id="c2" name="color" type="radio" value="green">Green
+<input onChange="call()" id="c3" name="color" type="radio" value="blue">Blue
+<br><br>
+
+<font id="msg" size="14">NUMERIC INFOSYSTEMS</font>
+
+
+</html>

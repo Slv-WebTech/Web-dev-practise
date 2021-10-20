@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second day with JS</title>
+    <script>
+      function add() {
+        var c = parseInt(one.value) + parseInt(two.value);
+        result.innerHTML = c;
+      }
+      function diff() {
+        var c = first.value - second.value;
+        result.innerHTML =
+          " <font color='green'> <h1> Subtraction of" +
+          first.value +
+          "and" +
+          second.value +
+          "is" +
+          c;
+      }
+      function food() {
+        fname.innerHTML = food.value;
+        fpic.width = 80;
+        fpic.src = food.value + ".jpg";
+        if (food.value == "Samosa") {
+          price = 120;
+        } else if (food.value == "Jalebi") {
+          price = 170;
+        } else if (food.value == "laadu") {
+          price = 220;
+        } else if (food.value == "gulab jaamun") price = 40;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="first number for add" id="one" />
+    <input type="text" placeholder="two number for add" id="two" />
+    <input type="button" value="Add" onclick="add()" />
+    <hr />
+    <input type="text" placeholder="first name for subtract" id="first" />
+    <input type="text" placeholder="two number for subtract" id="second" />
+    <input type="button" value="Subtract" onclick="diff()" />
+
+    <div id="result">result</div>
+    <b>Food:</b><br />
+    <select name="food" id="fpic">
+      <option value="">Samosa</option>
+      <option value="">Jalebi</option>
+      <option value="">laadu</option>
+      <option value="">gulab jaamun</option>
+    </select>
+    <hr />
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>First code with java</title>
+    <script>
+      function call() {
+        alert("Hyee " + fname.value + "  " + lname.value + " work is done");
+      }
+      function add() {
+        var c = parseInt(one.value) + parseInt(two.value);
+        // alert(c + " is sum");
+        alert("sum is " + c);
+      }
+      function diff() {
+        var s = first.value - second.value;
+        alert(s + " is subtract");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="first number for add" id="one" />
+    <input type="text" placeholder="two number for add" id="two" />
+    <input type="button" value="Add" onclick="add()" />
+    <hr />
+    <input type="text" placeholder="first name for subtract" id="first" />
+    <input type="text" placeholder="two number for subtract" id="second" />
+    <input type="button" value="Add" onclick="diff()" />
+    <hr />
+    <input type="text" placeholder="first name" id="fname" />
+    <input type="text" placeholder="two name" id="lname" />
+    <input type="button" value="Add" onclick="call()" />
+    <hr />
+  </body>
+</html>

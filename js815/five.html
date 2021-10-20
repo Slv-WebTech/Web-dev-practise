@@ -1,0 +1,38 @@
+<script>
+function call(){
+ fname.innerHTML="<h1>"+food.value+"</h1>"
+ fpic.width=80
+ fpic.src=food.value+".jpg"
+ if(food.value=="Chola Bhatura")
+ { price=120}
+ else if(food.value=="Pav Bhaji")
+ { price=150}
+ else if(food.value=="Samosa")
+ {
+  price=20
+ }
+ fprice.innerHTML="<h1> &#8377;"+price+"/-</h1>"
+
+}
+</script>
+
+
+<html>
+<b>Food:</b><br>
+<select id="food">
+<option>Chola Bhatura</option>
+<option>Pav Bhaji</option>
+<option>Samosa</option>
+</select>
+<br><br>
+<div id="fname">See Here....</div>
+
+<br><br>
+<div id="fprice">See Here....</div>
+
+<br><br>
+
+<img id="fpic" />
+<br><br>
+<input type="button" value="Click Here" onclick="call()"/>
+</html>

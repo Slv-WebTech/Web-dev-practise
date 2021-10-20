@@ -1,0 +1,38 @@
+<script>
+ function add()
+ {
+ var c=parseInt(txt1.value)+parseInt(txt2.value)
+ result.innerHTML=`<font color='red'><h1>Sum of ${txt1.value} and ${txt2.value} is ${c}</h1></font>`
+
+ }
+
+ function Subtract()
+ {
+ var c=txt1.value-txt2.value
+ result.innerHTML="<font color='green'><h1>Subtraction of "+txt1.value+" and "+txt2.value+" is "+c+"</h1></font>"
+
+ }
+
+
+
+
+
+</script>
+
+
+<html>
+   <input  type='text' id='txt1' placeholder="First Number"><br><br>
+   <input  type='text' id='txt2' placeholder="Second Number"><br><br>
+
+   <input type="button" value="Addition" onclick="add()" />
+   <input type="button" value="Subtraction" onclick="Subtract()" />
+   <br><br>
+
+
+ <div id="result">See Result Here....</div>
+
+
+</html>
+
+
+
