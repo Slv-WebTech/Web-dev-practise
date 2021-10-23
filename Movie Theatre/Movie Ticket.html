@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tickets</title>
+    <script src="Movie Ticket.js"></script>
+</head>
+
+<body>
+    <br><br>
+    <center>
+        <h1>S.l.v. Cineplex</h1>
+        <hr width="200" />
+        <hr width="200" />
+        <br>
+        <br>
+        <em><b>Movie Screen</b></em>
+        <select name="movie screen" id="movie_screen" onchange="screen()">
+            <option value="">-:Select:-</option>
+            <option value="">Screen 1</option>
+            <option value="">Screen 2</option>
+            <option value="">Screen 3</option>
+            <option value="">Screen 4</option>
+        </select> <br><br>
+        <b>Timmings:</b>
+        <select name="" id="timmings" onchange=movie_details()>
+            <option value="">-:Select:-</option>
+        </select> <br><br>
+
+        <b>Movie Name:</b>
+        <span id="movie_name"></span> <br>
+        <b>Poster:</b> <br>
+        <img src=" " id="poster" alt=""> <br><br>
+        <input type="radio" name="lang" id="Hindi" onclick="discount()">Hindi
+        <input type="radio" name="lang" id="English" onclick="discount()">English
+        <div id="concession"></div>
+
+
+
+    </center>
+</body>
+
+</html>
