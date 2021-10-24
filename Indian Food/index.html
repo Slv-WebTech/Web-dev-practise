@@ -6,10 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Food</title>
+    <script src="food.js"></script>
 </head>
 
 <body>
-
+    <br><br>
+    <center>
+        <h1>Indian Food:-</h1>
+        <hr width="250">
+        <hr width="250">
+        <em><b>Variety: </b></em>
+        <select name="" id="variety" onchange="fillitems()">
+            <option value="">-:Select:-</option>
+            <option value="">North Indian</option>
+            <option value="">South Indian</option>
+            <option value="">Chenese</option>
+        </select> <br><br>
+        <em><b>Dishes: </b></em>
+        <select name="" id="dishes" onchange="details()">
+            <option value="">-:Select:-</option>
+        </select> <br><br>
+        <b>Name:</b> <span id="fname"></span> <br>
+        <b>Picture:</b> <br> <img src="" id="fpicture" alt=""> <br>
+        <b>Price:</b> <span id="price"></span> <br>
+        <br>
+        <hr width="500">
+        <b>Enter Quantity: </b> <input type="number" id="qty" placeholder="Quantity">
+        <br>
+        <input id="no_dis" type="radio" name="discount">No Discount <input id="five" type="radio" name="discount">5%
+        <input id="ten" type="radio" name="discount">10%
+        <input id="fifteen" type="radio" name="discount">15% <input id="twenty" type="radio" name="discount">20%
+        <br>
+        <input type="button" value="Net Amount" onclick="amount()" /> <br> <br>
+        <b>Net Amount: </b> <span id="net"></span>
+    </center>
 </body>
 
 </html>
