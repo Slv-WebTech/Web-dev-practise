@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tickets</title>
+    <script src="Movie Ticket.js"></script>
+</head>
+
+<body>
+
+    <center>
+        <fieldset>
+            <legend align="center">
+                <h1>S.l.v. Cineplex</h1>
+            </legend>
+            <!-- <hr width="200" />  -->
+            <!-- <hr width="200" />  -->
+            <table cellspacing="9" cellpadding="0">
+                <tr>
+                    <td> <em><b>Movie Screen:</b></em></td>
+                    <td> <select name="movie screen" id="movie_screen" onchange="screen()">
+                            <option value="">-:Select:-</option>
+                            <option value="">Screen 1</option>
+                            <option value="">Screen 2</option>
+                            <option value="">Screen 3</option>
+                            <option value="">Screen 4</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td> <b>Timmings:</b></td>
+                    <td> <select name="" id="timmings">
+                            <option value="">-:Select:-</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td> <b>Date:</b></td>
+                    <td> <input type="date" id="date" name="date"> </td>
+                </tr>
+                <tr>
+                    <td> <b>Email:</b></td>
+                    <td> <input type="email" id="email" name="email"></td>
+                </tr>
+                <td> <b># Tickets:</b></td>
+                <td> <input type="number" id="qty" placeholder="Enter number of Tickets"></td>
+                </tr>
+
+            </table> <input type="button" value="Book Ticket" onclick="bticket()"> <br>
+        </fieldset>
+        <b>Movie Name:</b>
+        <span id="movie_name"></span> <br>
+        <b>Poster:</b> <br>
+        <img src=" " id="poster" alt=""> <br>
+        <b>Total Price:</b>
+        <span id="concession"></span>
+
+
+
+    </center>
+</body>
+
+</html>
